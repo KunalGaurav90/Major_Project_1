@@ -1,0 +1,88 @@
+  {
+    "scan_id": "SCAN_01_001",
+    "split": "train",
+    "cohort": "Glioblastoma Multiforme (WHO Grade IV)",
+    "entity": "Glioblastoma Multiforme / High-Grade Glioma",
+    "is_abnormal": true,
+    "subregions": {
+      "enhancing_core": "Present (thick irregular rim)",
+      "necrotic_core": "Extensive central non-enhancing necrosis",
+      "peritumoral_edema": "Marked hyperintense vasogenic edema on T2/FLAIR",
+      "mass_effect": "Midline shift and lateral ventricle compression"
+    },
+    "metabolic_rationale": "Marked Warburg effect (aerobic glycolysis dependency via GLUT1/HK2 upregulation) and high risk of elevated intracranial pressure from vasogenic edema.",
+    "qa_pairs": [
+      {
+        "question_id": "SCAN_01_001_Q1",
+        "axis": 1,
+        "axis_name": "abnormality_identification",
+        "question": "What abnormality is visible in this brain MRI scan?",
+        "ground_truth": "Heterogeneous intra-axial mass in cerebral hemisphere with thick, irregular peripheral ring enhancement, central necrosis, marked peritumoral vasogenic edema on FLAIR, and mass effect with ventricular effacement and midline shift.",
+        "grounding_keywords": [
+          "mass",
+          "enhancement",
+          "edema"
+        ],
+        "uncertainty_label": "Definitive on imaging"
+      },
+      {
+        "question_id": "SCAN_01_001_Q2",
+        "axis": 2,
+        "axis_name": "subregional_pathology",
+        "question": "What subregional pathological characteristics (such as enhancing rim, edema, or mass effect) are present in this scan?",
+        "ground_truth": "Enhancing core: Present (thick irregular rim); Necrosis: Extensive central non-enhancing necrosis; Edema: Marked hyperintense vasogenic edema on T2/FLAIR; Mass effect: Midline shift and lateral ventricle compression.",
+        "grounding_keywords": [
+          "enhancing",
+          "edema",
+          "necrosis",
+          "mass effect"
+        ],
+        "uncertainty_label": "Subregional radiological assessment"
+      },
+      {
+        "question_id": "SCAN_01_001_Q3",
+        "axis": 3,
+        "axis_name": "grounded_dietary_guidelines",
+        "question": "According to the MRI findings and underlying disease pathophysiology, what food items and dietary strategy should the patient consume?",
+        "ground_truth": "A therapeutic Ketogenic Diet (KD) or Modified Atkins Diet (strict carbohydrate restriction) is indicated to exploit the tumor's reliance on glycolysis, coupled with dietary sodium restriction (<2,000 mg/day) to help control vasogenic peritumoral edema and elevated intracranial pressure.",
+        "grounding_keywords": [
+          "ketogenic",
+          "carbohydrate",
+          "glucose",
+          "sodium",
+          "edema"
+        ],
+        "uncertainty_label": "Requires clinical oncology & metabolic lab verification before initiation"
+      },
+      {
+        "question_id": "SCAN_01_001_Q4",
+        "axis": 4,
+        "axis_name": "functional_activity_guidelines",
+        "question": "According to the MRI scan provided, can the person safely engage in strenuous physical activity such as pushups?",
+        "ground_truth": "Strenuous physical activity, heavy weightlifting, and pushups are strictly contraindicated due to mass effect and marked edema, as Valsalva maneuvers cause acute spikes in intracranial pressure that risk brain herniation. Light supervised walking is permitted.",
+        "grounding_keywords": [
+          "contraindicated",
+          "pushups",
+          "intracranial pressure",
+          "herniation",
+          "mass effect"
+        ],
+        "uncertainty_label": "Physiological functional recommendation"
+      },
+      {
+        "question_id": "SCAN_01_001_Q5",
+        "axis": 5,
+        "axis_name": "etiology_and_infectivity",
+        "question": "Is the uploaded MRI scan indicating an infectious or contagious condition?",
+        "ground_truth": "The lesion is non-infectious; it is a primary malignant glial neoplasm (WHO Grade IV Glioblastoma) arising from intrinsic neuro-glial mutations, not a pathogen or contagious infection.",
+        "grounding_keywords": [
+          "non-infectious",
+          "malignant",
+          "glial",
+          "neoplasm",
+          "not contagious"
+        ],
+        "uncertainty_label": "Definitive etiology"
+      }
+    ]
+  },
