@@ -1,0 +1,60 @@
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+🖼️  Image uploaded successfully
+🔬 Visual Diagnosis Anchor: Normal Brain Anatomy / Unremarkable Cerebral Cortex
+[Image displayed here — saved as session_image_1.png]
+❓ Question: in the image provided, do the person has tumour?
+⏳ Running AMEF inference...
+
+🔎 Detected Clinical Intent: TUMOR_PRESENCE
+🔎 Retrieved context from: ['Glioblastoma Multiforme / High-Grade Glioma', 'Glioblastoma Multiforme / High-Grade Glioma', 'Glioblastoma Multiforme / High-Grade Glioma']
+🔎 Grounding Score: 0.21
+
+💬 Answer:
+Diagnosis: Normal Brain Anatomy / Unremarkable Cerebral Cortex.
+Clinical Finding: No, this is an unremarkable brain MRI scan. There is no evidence of tumor, space-occupying mass, pathologic contrast enhancement, or vasogenic edema. Ventricles and sulci are symmetric and normal.
+
+[Clinical Uncertainty & Safety Verification]: Definitive diagnosis and therapeutic dietary/lifestyle modifications must be confirmed via stereotactic biopsy with molecular neuropathology (IDH, MGMT status) and baseline metabolic panels prior to clinical execution.
+
+------------------------------------------------------------
+❓ Question: so can the person perform pushups?
+⏳ Running AMEF inference...
+
+🔎 Detected Clinical Intent: FUNCTIONAL_ACTIVITY
+🔎 Retrieved context from: ['Normal Brain Anatomy / Unremarkable Cerebral Cortex', 'Normal Brain Anatomy / Unremarkable Cerebral Cortex', 'Normal Brain Anatomy / Unremarkable Cerebral Cortex']
+🔎 Grounding Score: 0.48
+
+💬 Answer:
+Diagnosis: Normal Brain Anatomy / Unremarkable Cerebral Cortex (Normal Intracranial Compliance).
+
+Functional Activity Guidance:
+Yes, the person can safely perform pushups, aerobic exercise, and resistance training. There is no mass effect or elevated intracranial pressure on this scan, meaning physical exertion poses no neurological risk.
+Recommended Activity: Routine cardiovascular and fitness training appropriate for age.
+
+------------------------------------------------------------
+❓ Question: what about the food, can the person eat everything?
+⏳ Running AMEF inference...
+
+🔎 Detected Clinical Intent: METABOLIC_DIET
+🔎 Retrieved context from: ['Glioblastoma Multiforme / High-Grade Glioma', 'Glioblastoma Multiforme / High-Grade Glioma', 'Glioblastoma Multiforme / High-Grade Glioma']
+🔎 Grounding Score: 0.24
+
+💬 Answer:
+Diagnosis / Metabolic Profile: Normal Brain Anatomy / Unremarkable Cerebral Cortex with physiological baseline cerebral glucose metabolism.
+
+Grounded Dietary Protocol:
+Standard healthy, balanced nutritional regimen (such as the Mediterranean diet rich in whole grains, vegetables, and healthy fatty acids) supporting general brain and cardiovascular longevity. No specialized oncological metabolic restrictions are required for this normal scan.
+
+[Clinical Uncertainty & Safety Verification]: Definitive diagnosis and therapeutic dietary/lifestyle modifications must be confirmed via stereotactic biopsy with molecular neuropathology (IDH, MGMT status) and baseline metabolic panels prior to clinical execution.
+
+------------------------------------------------------------
+❓ Question: is the person totally fit and fine?
+⏳ Running AMEF inference...
+
+🔎 Detected Clinical Intent: DIAGNOSIS_GENERAL
+🔎 Retrieved context from: ['Normal Brain Anatomy / Unremarkable Cerebral Cortex', 'Normal Brain Anatomy / Unremarkable Cerebral Cortex', 'Normal Brain Anatomy / Unremarkable Cerebral Cortex']
+🔎 Grounding Score: 0.47
+
+💬 Answer:
+Diagnosis: Normal Brain Anatomy / Unremarkable Cerebral Cortex. Findings are consistent with the uploaded imaging scan.
+
+------------------------------------------------------------
